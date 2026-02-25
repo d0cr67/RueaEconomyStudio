@@ -108,7 +108,7 @@ func (gm *EnhancedGuildManager) ImportTerritoriesFromAPI() (int, int, error) {
 	}
 
 	// Fetch territory list from Wynncraft API
-	resp, err := http.Get("https://api.wynncraft.com/v3/guild/list/territory")
+	resp, err := http.Get("https://beta-api.wynncraft.com/v3/guild/list/territory")
 	if err != nil {
 		return 0, 0, fmt.Errorf("failed to fetch territory list: %v", err)
 	}
